@@ -25,8 +25,8 @@
                                 <rect key="frame" x="75" y="194" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="NDN-lv-f9c">
-                                <rect key="frame" x="45" y="388" width="120" height="120"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="Xld-Sl-r6X">
+                                <rect key="frame" x="50" y="388" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="UNz-mJ-Ene">
@@ -42,12 +42,16 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="rollButtonPresed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1g3-PB-9qf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="diceImageView1" destination="Xld-Sl-r6X" id="5Um-zC-HGC"/>
                         <outlet property="diceImageView2" destination="UNz-mJ-Ene" id="sdT-bv-p8y"/>
                     </connections>
                 </viewController>
